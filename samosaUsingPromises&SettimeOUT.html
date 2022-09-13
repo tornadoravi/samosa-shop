@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>samosa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container;">
+        <h1 style="text-align:center;">ıllıllı⭐🌟 W͙E͙L͙C͙O͙M͙E͙ T͙O͙ V͙A͙N͙D͙H͙A͙
+            S͙A͙P͙U͙D͙U͙V͙I͙N͙G͙A͙👨🏾‍🍳(s͙a͙m͙o͙s͙a͙ c͙a͙f͙e͙) 🌟⭐ıllıllı</h1>
+        <br>
+        <h2 style="text-align:center;">💯live kitchen🍱stall</h2>
+        <marquee BGCOLOR=Amber><strong>❌special offer for today.......(20% discount)❗️</strong></marquee>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <h3 style="font-size: 35px ;"><b> 🎀 𝑀𝐸𝒩𝒰 𝒞𝒜𝑅𝒟 🎀 </b></h3>
+                <br>
+                <li style="font-size: 30px ;"><i><B>➾ Chole Samosa </B> <small>-$30.00</small></i></li>
+                <li style="font-size: 30px ;"><i><B> ➾ Chocolate Samosa</B> <small>- $50.00</small></i></li>
+                <li style="font-size: 30px ;"><i><B> ➾ Pasta Samosa</B> <small>-$60.00</small></i></li>
+                <li style="font-size: 30px ;"><i><B>➾ Punjabi Samosa</B> <small>- $80.00</small></i></li>
+                <li style="font-size: 30px ;"><i><B>➾ Cauliflower Samosa</B> <small>- $90.00</small></i></li>
+                <li style="font-size: 30px ;"><i><B> ➾ Mushroom Samosa</B> <small>- $100.00</small></i></li>
+                <li style="font-size: 30px ;"><i><B>➾ Potato Samosa </B> <small>- $10.00</small></i></li>
+                <br>
+                <marquee direction="up"><strong>order here......❗️</strong></marquee>
+                <br>
+                <input type="button" onclick="validateForm()" value="☞ order now">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+            </div>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            userMobileNo = prompt("enter mobile number")
+            firstDigi = Math.floor(userMobileNo / 1000000000)
+            if ((userMobileNo.length) == 10 && (firstDigi == "6") || (firstDigi == "7") || (firstDigi == "8") || (firstDigi == "9")) {
+
+
+
+                shop = "open"
+                a = new Promise((resolve, reject) => {
+                    if (shop == "open") {
+
+                        resolve
+                            (document.write("<strong>ıllıllı⭐🌟 V͙A͙N͙D͙H͙A͙ S͙A͙P͙D͙U͙V͙I͙N͙G͙A͙ (S͙A͙M͙O͙S͙A͙ S͙T͙A͙L͙L͙) 🌟⭐ıllıllı<strong>"))
+                        document.write("<br>")
+                        document.write("<br>")
+                        document.write(`<strong>YOUR MOBILE NUMBER 📳: +91${userMobileNo}</strong>`)
+                        document.write("<br>")
+                        document.write("<br>")
+
+                    }
+                    else {
+
+                        reject
+                            (document.write(`<strong>꧁•⊹٭𝚜𝚘𝚛𝚛𝚢 :) 𝚝𝚘𝚍𝚊𝚢 𝚜𝚑𝚘𝚙 𝚌𝚕𝚘𝚜𝚎٭⊹•꧂<strong>`))
+                        document.write("<br>")
+
+                    }
+                })
+                a.then((resolve) => {
+                    document.write("<br>")
+                    // document.write('******plz enter your order*******')
+                    // document.write("<br>")
+
+                    let samosa = {
+                        typesOfSamosa: [
+                            {
+                                recipes: "chole samosa",
+                                makingRecipes: {
+                                    step1: "Mix an make Dough",
+                                    step2: "Making Structure",
+                                    step3: "Prepare to chenna dal ",
+                                    step4: "Fill and Fried"
+                                }
+                            },
+                            {
+                                recipes: "chocolate samosa",
+                                makingRecipes: {
+                                    step1: "Mix an make Dough",
+                                    step2: "Making Structure",
+                                    step3: "Prepare to Chocolate ",
+                                    step4: "Fill and Fried"
+                                }
+                            },
+                            {
+                                recipes: "pasta samosa",
+                                makingRecipes: {
+                                    step1: "Mix an make Dough",
+                                    step2: "Making Structure",
+                                    step3: "Prepare to Pasta  ",
+                                    step4: "Fill and Fried"
+                                }
+                            },
+                            {
+                                recipes: "punjabi samosa",
+                                makingRecipes: {
+                                    step1: "Mix an make Dough",
+                                    step2: "Making Structure",
+                                    step3: "Prepare to Masala ",
+                                    step4: "Fill and Fried"
+                                }
+                            },
+                            {
+                                recipes: "cauliflower samosa",
+                                makingRecipes: {
+                                    step1: "Mix an make Dough",
+                                    step2: "Making Structure",
+                                    step3: "Prepare to Cauliflower Masala ",
+                                    step4: "Fill and Fried"
+                                }
+                            },
+                            {
+                                recipes: "mushroom samosa",
+                                makingRecipes: {
+                                    step1: "Mix an make Dough",
+                                    step2: "Making Structure",
+                                    step3: "Prepare to Mushroom Masala",
+                                    step4: "Fill and Fried"
+                                }
+                            },
+                            {
+                                recipes: "potato samosa",
+                                makingRecipes: {
+                                    step1: "Mix an make Dough",
+                                    step2: "Making Structure",
+                                    step3: "Prepare to Potato Masala",
+                                    step4: "Fill and Fried"
+                                }
+                            },
+
+                        ],
+                        sideDish: [
+                            {
+                                dish: "MINT",
+                                makingDish: {
+                                    step1: "Grinding Mint, oil and Salt ",
+                                    step2: "Cooking with add Oil and Black Mustard"
+                                }
+                            },
+                            {
+                                dish: "TOMATO SAUCE",
+                                makingDish: {
+                                    step1: "Grinding fresh Tomato ",
+                                    step2: "Adding additional incretance"
+                                }
+                            },
+                            {
+                                dish: "MAYONNAISE",
+                                makingDish: {
+                                    step1: "Grinding Oil and Ginger",
+                                    step2: "Adding incretance Vingar and Sugar"
+                                }
+                            },
+                        ]
+                    }
+
+                    //===============================================| Choice of Samosa |======================================================
+
+                    //⬇️⬇️ Taking user input of Samosa ⬇️⬇️ 
+                    userRecipeSelection = String(prompt(`
+    1 : Chole Samosa\n
+    2 : Chocolate Samosa \n
+    3 : Pasta Samosa \n
+    4 : Punjabi Samosa \n
+    5 : Cauliflower Samosa \n
+    6 : Mushroom Samosa\n
+    7 : Potato Samosa\n 
+    ENTER THE DISH NAME`)).toLowerCase()
+
+
+
+                    function seletionOfRecipe(menu, recipeChoice) {
+
+                        return menu.filter(n => n.recipes == recipeChoice);
+                    }
+
+                    //⬇️⬇️ Implementing of Samosa according to user Input in - Making of Recipe ⬇️⬇️
+                    makingOfRecipe(userRecipeSelection)
+
+                    function makingOfRecipe(userRecipe) {
+
+                        DishSteps = []
+                        seletionOfRecipe(samosa.typesOfSamosa, userRecipe).forEach(recipe => {
+                            DishSteps.push(Object.values(recipe.makingRecipes))
+                        });
+                        idword = userRecipe.slice(1, 5)
+                        idNum = Math.floor(Math.random() * 99) + 1
+
+
+                        setTimeout(() => {
+                            document.write('⌜‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾⌝');
+                            document.write("<br>")
+                            document.write(`   Please Wait, Your ${userRecipe} is Preparing 👨‍🍳`)
+                            document.write("<br>")
+                            document.write("")
+                            document.write("<br>")
+                            document.write(`your order 🆔 : ${idNum + idword} `)
+                            document.write("<br>")
+                            document.write('⌞____________________________________________________⌟')
+                            document.write("<br>")
+
+
+                            let counting = 0
+                            let intervals = setInterval(() => {
+                                document.write("<br>")
+                                document.write(`Step ${counting + 1} ▶️ ${DishSteps[0][counting]}`)
+                                document.write("<br>")
+                                counting++
+                                if (counting == DishSteps[0].length) {
+                                    clearInterval(intervals)
+                                }
+                            }, 4000);
+                        }, 3000)
+
+
+                    }
+
+                    //=================================================| Choice of Side Dish |====================================================
+
+                    function seletionOfDish(menu, DishChoice) {
+                        return menu.filter(n => n.dish == DishChoice);
+                    }
+
+                    function choiceMint(userChoice) {
+                        seletionOfDish(samosa.sideDish, userChoice).forEach(Idish => {
+                            setTimeout(() => {
+                                document.write("<br>")
+                                document.write('‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾');
+                                document.write("<br>")
+                                document.write(`   Side Dish '${userChoice}🌿' is Preparing  `)
+                                document.write("<br>")
+                                document.write('___________________________________________')
+                                document.write("<br>")
+                                setTimeout(() => {
+                                    document.write(`Step 1 ▶️ ${Idish.makingDish.step1}`)
+                                    document.write("<br>")
+                                    setTimeout(() => {
+                                        document.write("<br>")
+                                        document.write(`Step 2 ▶️ ${Idish.makingDish.step2}`)
+                                        document.write("<br>")
+                                    }, 4000)
+                                }, 4000)
+                            }, 22000)
+                        });
+                    }
+
+                    function choiceTomatoSauce(userChoice) {
+                        seletionOfDish(samosa.sideDish, userChoice).forEach(Idish => {
+                            setTimeout(() => {
+                                document.write("<br>")
+                                document.write('‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾')
+                                document.write("<br>")
+                                document.write(`   Side Dish '${userChoice}🍅' is Preparing  `)
+                                document.write("<br>")
+                                document.write('___________________________________________')
+                                document.write("<br>")
+                                setTimeout(() => {
+                                    document.write("<br>")
+                                    document.write(`Step 1 ▶️ ${Idish.makingDish.step1}`)
+                                    document.write("<br>")
+                                    setTimeout(() => {
+                                        document.write("<br>")
+                                        document.write(`Step 2 ▶️ ${Idish.makingDish.step2}`)
+                                        document.write("<br>")
+                                    }, 4000)
+                                }, 4000)
+                            }, 32000)
+                        });
+                    }
+
+                    function choiceMayonnaise(userChoice) {
+                        seletionOfDish(samosa.sideDish, userChoice).forEach(Idish => {
+                            setTimeout(() => {
+                                document.write('‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾')
+                                document.write("<br>")
+                                document.write(`   Side Dish '${userChoice}🥌' is Preparing  `)
+                                document.write("<br>")
+                                document.write('___________________________________________')
+                                document.write("<br>")
+                                setTimeout(() => {
+                                    document.write("<br>")
+                                    document.write(`Step 1 ▶️ ${Idish.makingDish.step1}`)
+                                    document.write("<br>")
+                                    setTimeout(() => {
+                                        document.write("<br>")
+                                        document.write(`Step 2 ▶️ ${Idish.makingDish.step2}`)
+                                        document.write("<br>")
+
+                                    }, 4000)
+                                }, 4000)
+                            }, 42000)
+                        });
+                    }
+
+                    //=================================================| Choice of Yes or No |====================================================
+
+                    //⬇️⬇️ Implementing of Side Dish according to user Input in - Side Dish Choice Mint ⬇️⬇️
+                    sideDishChoiceMint(choiceMint, choiceTomatoSauce, choiceMayonnaise)
+
+                    function sideDishChoiceMint(Imint, ItomatoSauce, Imayonnaise) {
+                        // document.write(`Do you want ${samosa.sideDish[0].dish}? ( YES , NO )`)
+                        isMintNeeded = String(prompt(`DO YOU WANT "MINT" ? \n ENTER THE (YES/NO)`))
+                        if (isMintNeeded.toLowerCase() === "yes") {
+                            Imint("MINT")
+                            sideDishChoiceTomatoSauce(ItomatoSauce, Imayonnaise)
+                        } else if (isMintNeeded.toLowerCase() === "no") {
+                            sideDishChoiceTomatoSauce(ItomatoSauce, Imayonnaise)
+                        } else {
+                            sideDishChoiceTomatoSauce(ItomatoSauce, Imayonnaise)
+                        }
+                    }
+
+                    function sideDishChoiceTomatoSauce(ItomatoSauce, Imayonnaise) {
+                        // document.write(`Do you want ${samosa.sideDish[1].dish}? ( YES , NO )`)
+                        isTomatoSauceNeeded = String(prompt(` DO YOU WANT "TOMATOSAUCE"?  \n ENTER THE (YES/NO)`))
+                        if (isTomatoSauceNeeded.toLowerCase() === "yes") {
+                            ItomatoSauce("TOMATO SAUCE");
+                            sideDishChoiceMayonnaise(Imayonnaise)
+                        } else if (isTomatoSauceNeeded.toLowerCase() === "no") {
+                            sideDishChoiceMayonnaise(Imayonnaise)
+                        } else {
+                            sideDishChoiceMayonnaise(Imayonnaise)
+                        }
+                    }
+
+                    function sideDishChoiceMayonnaise(Imayonnaise) {
+                        // document.write(`Do you want ${samosa.sideDish[2].dish}? ( YES , NO )`)
+                        isMayonnaiseNeeded = String(prompt(`DO YOU WANT "MAYONNAISE"?  \n ENTER THE (YES/NO)`))
+                        if (isMayonnaiseNeeded.toLowerCase() === "yes") {
+                            document.write("<br>")
+                            document.write("𓂀 𝕋𝕙𝕒𝕟𝕜 𝕐𝕠𝕦, 𝕐𝕠𝕦𝕣 𝕆𝕣𝕕𝕖𝕣 𝕚𝕤 𝕓𝕖𝕖𝕟 ℙ𝕝𝕒𝕔𝕖𝕕 𓂀")
+                            document.write("<br>")
+                            Imayonnaise("MAYONNAISE");
+                        } else if (isMayonnaiseNeeded.toLowerCase() === "no") {
+                            document.write("<br>")
+                            document.write("𓂀 𝕋𝕙𝕒𝕟𝕜 𝕐𝕠𝕦, 𝕐𝕠𝕦𝕣 𝕆𝕣𝕕𝕖𝕣 𝕚𝕤 𝕓𝕖𝕖𝕟 ℙ𝕝𝕒𝕔𝕖𝕕 𓂀")
+                            document.write("<br>")
+                        } else {
+                            document.write("<br>")
+                            document.write("𓂀 𝕋𝕙𝕒𝕟𝕜 𝕐𝕠𝕦, 𝕐𝕠𝕦𝕣 𝕆𝕣𝕕𝕖𝕣 𝕚𝕤 𝕓𝕖𝕖𝕟 ℙ𝕝𝕒𝕔𝕖𝕕 𓂀")
+                            document.write("<br>")
+                        }
+                    }
+
+
+                    resolve
+
+                })
+                    .catch((reject) => {
+                        document.write("<br>")
+                        document.write('********cannot accepted order*********')
+                        document.write("<br>")
+
+                        reject
+                    })
+
+
+            }
+            else {
+                alert(`invalid mobile number`)
+            }
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
